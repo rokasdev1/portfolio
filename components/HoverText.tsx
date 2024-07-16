@@ -3,13 +3,14 @@ import React from 'react'
 type Props = {
     text: string,
     classNames: string,
+    href: string,
 }
 
 const HoverText = (props: Props) => {
   return (
-    <h1 className={`hover:drop-shadow-strong-w transition-all ${props.classNames}`}>
+    <a className={`hover:drop-shadow-strong-w transition-all ${props.classNames}`} href={props.href} >
     {props.text}
-    </h1>
+    </a>
   )
 }
 
