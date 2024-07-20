@@ -1,4 +1,5 @@
 import BigText from '@/components/BigText'
+import Portfolio from '@/components/Portfolio'
 import React from 'react'
 
 const Projects = () => {
@@ -16,6 +17,7 @@ const Projects = () => {
     <div className='flex flex-col items-center'>
     <BigText text='My portfolio' subtitleText='Projects' classNames='text-gray-300'/>
     <div className='py-4 text-gray-400'>A collection of the more interesting projects I have worked on</div>
+    <Portfolio/>
     </div>
 
     </div>
