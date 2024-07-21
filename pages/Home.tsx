@@ -2,6 +2,7 @@ import BigText from '@/components/BigText'
 import InvertingButton from '@/components/InvertingButton'
 import Medias from '@/components/Medias'
 import NavBar from '@/components/NavBar'
+import { Sizes } from '@/enums/Size'
 import React from 'react'
 
 const Home = () => {
@@ -27,8 +28,11 @@ const Home = () => {
         </div>
 
         <div className='flex flex-col gap-8 md:pr-24 items-center'>
-        <Medias />
-        <InvertingButton text="Let's talk" />
+        <Medias 
+        row={true}
+        withText={false}
+        />
+        <InvertingButton text="Let's talk" size={Sizes.md}/>
         </div>
     </div>
 

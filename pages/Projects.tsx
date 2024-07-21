@@ -4,7 +4,7 @@ import React from 'react'
 
 const Projects = () => {
   return (
-    <div className="w-full h-[100vh] bg-black relative" id='Projects'>
+    <div className="w-full bg-black relative" id='Projects'>
 
     <img
     alt="bg3"
@@ -12,7 +12,7 @@ const Projects = () => {
     className="absolute inset-0 w-full h-full object-cover z-0 "
     />
     
-    <div className="z-10 backdrop-blur-md h-full flex justify-center items-start shadow-bg-inner border-t-4 border-black pt-16">
+    <div className="z-10 backdrop-blur-md h-full flex justify-center shadow-bg-inner border-t-4 border-black py-16">
 
     <div className='flex flex-col items-center'>
     <BigText text='My portfolio' subtitleText='Projects' classNames='text-gray-300'/>
