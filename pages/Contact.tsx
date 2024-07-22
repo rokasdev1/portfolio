@@ -5,7 +5,7 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div className="w-full h-[100vh] bg-black relative" id='Contact'>
+        <div className="w-full min-h-screen bg-black relative" id='Contact'>
     
         <img
         alt="contactbg"
@@ -13,7 +13,7 @@ const Contact = () => {
         className="absolute inset-0 w-full h-full object-cover z-0 "
         />
         
-        <div className="z-10 backdrop-blur-md h-full flex flex-col gap-8 justify-center shadow-bg-inner border-t-4 border-black py-16">
+        <div className="z-10 backdrop-blur-md min-h-screen flex flex-col gap-8 justify-center shadow-bg-inner border-t-4 border-black py-16">
     
         <div className='flex flex-col text-center items-center w-full'>
             <BigText
