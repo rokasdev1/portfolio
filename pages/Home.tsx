@@ -7,7 +7,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div className="w-full h-[100vh] bg-black relative" id='Home'>
+    <div className="w-full min-h-screen bg-black relative" id='Home'>
 
     <img
     alt="bg"
@@ -20,7 +20,7 @@ const Home = () => {
       <div className="py-10" />
 
 
-    <div className='flex flex-col pl-24 pb-48 md:w-[60vw] w-[80vw] h-[100vh] justify-center '>
+    <div className='flex flex-col pl-24 pb-48 md:w-[60vw] w-[80vw] min-h-screen justify-center '>
         <BigText text="Hey, I'm Rokas" subtitleText='Web / app developer' classNames='text-gray-400'/>
 
         <div className='pt-14 pb-8'>
