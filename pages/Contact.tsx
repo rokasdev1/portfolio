@@ -17,13 +17,14 @@ const Contact = () => {
     
         <div className='flex flex-col text-center items-center w-full'>
             <BigText
+            classNames='sm:text-md text-base'
             subtitleText='Get in contact'
             text='Contact me'
             />
-            <div className='py-4 text-gray-400'>I'm interested in freelance projects making apps and websites for your liking.</div>
+            <div className='py-4 px-4 text-gray-400 px-3'>I'm interested in freelance projects making apps and websites for your liking.</div>
         </div>
 
-        <div className='flex flex-row justify-between px-24'>
+        <div className='flex sm:flex-row sm:gap-0 flex-col sm:justify-between sm:items-start items-center px-24 gap-6'>
                 <Medias
                 row={false}
                 withText={true}

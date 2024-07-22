@@ -1,8 +1,17 @@
-import React from 'react'
+"use client";
+
+import React, { useState } from 'react'
 import HoverText from './HoverText'
 import Image from 'next/image'
 
 const NavBar = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div className="flex justify-between items-center w-full p-5">
     <div className="flex-1 flex justify-center">
@@ -14,7 +23,7 @@ const NavBar = () => {
       </div>
     </div>
     <div className="sm:hidden">
-      <button>
+      <button onClick={toggleMenu}>
         <Image
         alt="menu"
         src="/menu.svg"
@@ -23,6 +32,14 @@ const NavBar = () => {
         className='invert'
       />
       </button>
+      {menuOpen && (
+          <div className="absolute right-4 mt-2 w-48 bg-gray-600 bg-opacity-75 shadow-lg rounded-lg transition-all">
+            <a href="#Home" className="block px-4 py-2 hover:bg-gray-200">Home</a>
+            <a href="#About" className="block px-4 py-2 hover:bg-gray-200">About</a>
+            <a href="#Projects" className="block px-4 py-2 hover:bg-gray-200">Projects</a>
+            <a href="#Contact" className="block px-4 py-2 hover:bg-gray-200">Contact</a>
+          </div>
+        )}
     </div>
   </div>
   )
