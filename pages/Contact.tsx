@@ -24,7 +24,7 @@ const Contact = () => {
             <div className='py-4 px-4 text-gray-400 px-3'>I'm interested in freelance projects making apps and websites for your liking.</div>
         </div>
 
-        <div className='flex sm:flex-row sm:gap-0 flex-col sm:justify-between sm:items-start items-center px-24 gap-6'>
+        <div className='flex md:flex-row md:gap-0 flex-col md:justify-between md:items-start items-center md:px-24 px-12 gap-6'>
                 <Medias
                 row={false}
                 withText={true}

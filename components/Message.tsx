@@ -6,10 +6,10 @@ type Props = {}
 
 const Message = (props: Props) => {
   return (
-    <div className='w-[40vw] flex flex-col gap-4'>
+    <div className='md:w-[40vw] flex flex-col gap-4'>
         
         <div className='flex flex-row gap-4'>
-            <form className='w-1/2 rounded-lg border-2 hover:border-blue-400 transition-all'>
+            <form className='w-1/2 rounded-lg border-2 hover:border-blue-400 focus:border-blue-400 transition-all'>
                 <input
                 className='px-4 py-3 h-full w-full bg-transparent border-none focus:outline-none flex justify-start'
                 placeholder='Name'
